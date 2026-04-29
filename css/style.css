@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #f9e6e4;
+}
+
+.bubble {
+  border-radius: 50%;
+  background-color: #c9b9fa;
+  position: absolute;
+  left: -10vw;
+  animation: move 8s linear infinite;
+  z-index: -1;
+}
+
+.no1 {
+  animation-delay: 2s;
+  top: 10vh;
+  width: 3em;
+  height: 3em;
+}
+
+.no2 {
+  animation-delay: 5s;
+  top: 20vh;
+  width: 3em;
+  height: 3em;
+}
+
+.no3 {
+  animation-delay: 4s;
+  top: 30vh;
+  width: 5em;
+  height: 5em;
+}
+
+.no4 {
+  animation-delay: 1s;
+  top: 40vh;
+  width: 5em;
+  height: 5em;
+}
+
+.no5 {
+  top: 50vh;
+  width: 5em;
+  height: 5em;
+}
+
+.no6 {
+  animation-delay: 3s;
+  top: 60vh;
+  width: 3em;
+  height: 3em;
+}
+
+.no7 {
+  animation-delay: 6s;
+  top: 70vh;
+  width: 5em;
+  height: 5em;
+}
+
+.no8 {
+  animation-delay: 7s;
+  top: 80vh;
+  width: 3em;
+  height: 3em;
+}
+
+.no9 {
+  animation-delay: 4.5s;
+  top: 80vh;
+  width: 5em;
+  height: 5em;
+}
+
+.no10 {
+  animation-delay: 7.25s;
+  top: 10vh;
+  width: 5em;
+  height: 5em;
+}
+
+.no11 {
+  animation-delay: 2.15s;
+  top: 85vh;
+  width: 5em;
+  height: 5em;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-10vw);
+  }
+  100% {
+    transform: translateX(110vw);
+  }
+}/*# sourceMappingURL=style.css.map */

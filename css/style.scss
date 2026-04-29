@@ -1,0 +1,83 @@
+@use "partials";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: partials.$bg-farve;
+}
+
+.bubble{
+    border-radius: 50%;
+    background-color: partials.$bubble;
+    position: absolute;
+    left: -10vw;
+    animation: move 8s linear infinite;
+    z-index: -1;
+}
+
+.no1{
+    animation-delay: 2s;
+    top: 10vh;
+    @include partials.bubble2;
+}
+.no2{
+    animation-delay: 5s;
+    top: 20vh;
+    @include partials.bubble2;
+}
+.no3{
+    animation-delay: 4s;
+    top: 30vh;
+    @include partials.bubble1;
+}
+.no4{
+    animation-delay: 1s;
+    top: 40vh;
+    @include partials.bubble1;
+}
+.no5{
+    top: 50vh;
+    @include partials.bubble1;
+}
+.no6{
+    animation-delay: 3s;
+    top: 60vh;
+    @include partials.bubble2;
+}
+.no7{
+    animation-delay: 6s;
+    top: 70vh;
+    @include partials.bubble1;
+}
+.no8{
+    animation-delay: 7s;
+    top: 80vh;
+    @include partials.bubble2;
+}
+.no9{
+    animation-delay: 4.5s;
+    top: 80vh;
+    @include partials.bubble1;
+}
+.no10{
+    animation-delay: 7.25s;
+    top: 10vh;
+    @include partials.bubble1;
+}
+.no11{
+    animation-delay: 2.15s;
+    top: 85vh;
+    @include partials.bubble1;
+}
+
+@keyframes move{
+    0%{
+        transform: translateX(-10vw);
+    }
+    100%{
+        transform: translateX(110vw);
+    }
+}
