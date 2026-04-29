@@ -1,12 +1,13 @@
 $bg-farve: #f9e6e4;
 $bubble: #c9b9fa;
+$daored: #ED1C24;
 
 @mixin bubble1{
-    width: 5em;
-    height: 5em;
+    width: 4em;
+    height: 4em;
 }
 
 @mixin bubble2{
-    width: 3em;
-    height: 3em;
+    width: 2em;
+    height: 2em;
 }

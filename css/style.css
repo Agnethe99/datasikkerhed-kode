@@ -7,89 +7,105 @@ body {
   background-color: #f9e6e4;
 }
 
+p {
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid black;
+  width: 65%;
+  justify-self: center;
+}
+
+h1, h2 {
+  font-weight: 500;
+}
+
 .bubble {
   border-radius: 50%;
   background-color: #c9b9fa;
   position: absolute;
-  left: -10vw;
-  animation: move 8s linear infinite;
+  left: -15vw;
   z-index: -1;
+  animation: move 8s linear infinite;
 }
 
 .no1 {
   animation-delay: 2s;
   top: 10vh;
-  width: 3em;
-  height: 3em;
+  width: 2em;
+  height: 2em;
 }
 
 .no2 {
   animation-delay: 5s;
   top: 20vh;
-  width: 3em;
-  height: 3em;
+  width: 2em;
+  height: 2em;
 }
 
 .no3 {
   animation-delay: 4s;
   top: 30vh;
-  width: 5em;
-  height: 5em;
+  width: 4em;
+  height: 4em;
 }
 
 .no4 {
   animation-delay: 1s;
   top: 40vh;
-  width: 5em;
-  height: 5em;
+  width: 4em;
+  height: 4em;
 }
 
 .no5 {
   top: 50vh;
-  width: 5em;
-  height: 5em;
+  width: 4em;
+  height: 4em;
 }
 
 .no6 {
   animation-delay: 3s;
   top: 60vh;
-  width: 3em;
-  height: 3em;
+  width: 2em;
+  height: 2em;
 }
 
 .no7 {
   animation-delay: 6s;
   top: 70vh;
-  width: 5em;
-  height: 5em;
+  width: 4em;
+  height: 4em;
 }
 
 .no8 {
   animation-delay: 7s;
   top: 80vh;
-  width: 3em;
-  height: 3em;
+  width: 2em;
+  height: 2em;
 }
 
 .no9 {
   animation-delay: 4.5s;
   top: 80vh;
-  width: 5em;
-  height: 5em;
+  width: 4em;
+  height: 4em;
 }
 
 .no10 {
   animation-delay: 7.25s;
   top: 10vh;
-  width: 5em;
-  height: 5em;
+  width: 4em;
+  height: 4em;
 }
 
 .no11 {
   animation-delay: 2.15s;
   top: 85vh;
-  width: 5em;
-  height: 5em;
+  width: 4em;
+  height: 4em;
 }
 
 @keyframes move {
@@ -98,5 +114,53 @@ body {
   }
   100% {
     transform: translateX(110vw);
+  }
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  width: 85%;
+  margin: 4em auto;
+}
+
+.stage {
+  margin: 5em 2em 4em 2em;
+}
+.stage h2 {
+  margin-bottom: 0.5em;
+}
+.stage img {
+  width: 70vw;
+  margin: 2em 0;
+}
+.stage div {
+  display: flex;
+  gap: 0.5em;
+}
+.stage div .btn {
+  display: block;
+  width: 50%;
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+}
+
+@media screen and (min-width: 769px) {
+  p {
+    font-size: 18px;
+  }
+  h1 {
+    width: 38%;
+  }
+  .stage img {
+    height: 80vh;
+    width: auto;
+  }
+  .stage div {
+    gap: 3em;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -9,13 +9,29 @@ body{
     background-color: partials.$bg-farve;
 }
 
+p{
+    font-size: 16px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid black;
+    width: 65%;
+    justify-self: center;
+}
+
+h1, h2{
+    font-weight: 500;
+}
+
 .bubble{
     border-radius: 50%;
     background-color: partials.$bubble;
     position: absolute;
-    left: -10vw;
-    animation: move 8s linear infinite;
+    left: -15vw;
     z-index: -1;
+    animation: move 8s linear infinite;
 }
 
 .no1{
@@ -79,5 +95,63 @@ body{
     }
     100%{
         transform: translateX(110vw);
+    }
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro{
+    width: 85%;
+    margin: 4em auto;
+}
+
+.stage{
+        margin: 5em 2em 4em 2em;
+
+        h2{
+            margin-bottom: 0.5em;
+        }
+
+        img{
+            width: 70vw;
+            margin: 2em 0;
+        }
+
+        div{
+            display: flex;
+            gap: 0.5em;
+
+            .btn{
+            display: block;
+            width: 50%;
+            font-family: "Roboto Mono", monospace;
+            font-style: normal;
+            }
+        }
+        
+}
+
+@media screen and (min-width: 769px){
+    p{
+        font-size: 18px;
+    }
+
+    h1{
+        width: 38%;
+    }
+
+    .stage{
+        img{
+        height: 80vh;
+        width: auto;
+        }
+        div{
+            gap: 3em;
+        }
     }
 }
