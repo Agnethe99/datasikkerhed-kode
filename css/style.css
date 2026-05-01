@@ -9,11 +9,10 @@ body {
 
 p {
   font-size: 16px;
+  text-align: center;
 }
 
 h1 {
-  text-align: center;
-  margin-bottom: 0.5em;
   border-bottom: 1px solid black;
   width: 65%;
   justify-self: center;
@@ -21,6 +20,7 @@ h1 {
 
 h1, h2 {
   font-weight: 500;
+  text-align: center;
 }
 
 .bubble {
@@ -108,6 +108,34 @@ h1, h2 {
   height: 4em;
 }
 
+.no12 {
+  animation-delay: 3s;
+  bottom: -25vh;
+  width: 4em;
+  height: 4em;
+}
+
+.no13 {
+  animation-delay: 5.8s;
+  bottom: -10vh;
+  width: 2em;
+  height: 2em;
+}
+
+.no14 {
+  animation-delay: 7.5s;
+  bottom: -12vh;
+  width: 2em;
+  height: 2em;
+}
+
+.no15 {
+  animation-delay: 1.3s;
+  bottom: -20vh;
+  width: 4em;
+  height: 4em;
+}
+
 @keyframes move {
   0% {
     transform: translateX(-10vw);
@@ -116,35 +144,35 @@ h1, h2 {
     transform: translateX(110vw);
   }
 }
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .intro {
   width: 85%;
   margin: 4em auto;
 }
 
 .stage {
-  margin: 5em 2em 4em 2em;
+  padding: 2.5em 2em;
+  border: 1px solid #c9b9fa;
+}
+.stage.active {
+  display: block;
 }
 .stage h2 {
   margin-bottom: 0.5em;
 }
-.stage img {
-  width: 70vw;
-  margin: 2em 0;
+.stage .stage-img {
+  width: 75vw;
+  height: auto;
+  margin: 2em auto;
+  display: block;
 }
 .stage div {
   display: flex;
-  gap: 0.5em;
+  justify-content: center;
 }
 .stage div .btn {
-  display: block;
-  width: 50%;
+  width: 20em;
+  padding: 0.5em 3.5em;
+  margin: 0.5em;
   font-family: "Roboto Mono", monospace;
   font-style: normal;
 }
@@ -154,13 +182,10 @@ section {
     font-size: 18px;
   }
   h1 {
-    width: 38%;
+    width: 30%;
   }
-  .stage img {
+  .stage .stage-img {
     height: 80vh;
     width: auto;
-  }
-  .stage div {
-    gap: 3em;
   }
 }/*# sourceMappingURL=style.css.map */
