@@ -2,7 +2,6 @@ const btns=document.querySelectorAll(".stage .btn");
 const stages=document.querySelectorAll(".stage");
 const main=document.querySelector("main");
 
-
 const buildStage = (h2Text, pText, btnText, imagePath) => {
     let prevStage=document.querySelectorAll(".stage");
     for(stage of prevStage){
@@ -47,7 +46,7 @@ const nextStage=(e)=>{
         break;
         case "Slet beskederne":
             h2Text="Det er ikke muligt at sende penge via DAO.";
-            pText="Svindlere kan oprette falske hjemmesider, som er næsten identiske med en rigtig hjemmeside, for at øge din troværdighed til dem. Disse hjemmesider kan være svære at skelne fra de rigtige. Dobbelttjek derfor altid, om det er den rigtige hjemmeside, du befinder dig på. Hvis du ikke kan finde frem til landingssiden fra den rigtige forside, så stol ikke på siden. DAO opkræver aldrig penge via links.";
+            pText="Svindlere kan oprette falske hjemmesider, som er næsten identiske med en rigtig hjemmeside, for at øge din tillid til dem. Dobbelttjek derfor altid, om du er på den rigtige hjemmeside. DAO opkræver aldrig penge via links.";
             btnText=["Start forfra"];
         break;
         case "Søg på google, om det er sandt":
@@ -62,8 +61,8 @@ const nextStage=(e)=>{
             btnText=["Udfyld, indsend, og underskriv med mitID", "Luk siden ned"];
         break;
         case "Opfølgning med Torben Lund":
-            h2Text="Du spørger mere ind til hvordan pengeoverførslen med DAO fungere, da du ikke kan finde nogen, der fortæller om, hvordan deres oplevelser med at sende penge med DAO var. Torben Lund stopper til sidst helt med at svare, og du kan ikke få fat i ham igen.";
-            pText="Det er ikke muligt at sende penge via DAO. Svindlere kan oprette falske hjemmesider, som er næsten identiske med en rigtig hjemmeside, for at øge din troværdighed til dem. Disse hjemmesider kan være svære at skelne fra de rigtige. Dobbelttjek derfor altid, om det er den rigtige hjemmeside, du befinder dig på. Hvis du ikke kan finde frem til landingssiden fra den rigtige forside, så stol ikke på siden. DAO opkræver aldrig penge via links";
+            h2Text="Torben Lund svarer langsomt og i korte beskeder på dine spørgsmål. Han stopper til sidst helt med at svare, og du kan ikke få fat på ham igen.";
+            pText="Det er ikke muligt at sende penge via DAO. Svindlere kan oprette falske hjemmesider, som er næsten identiske med en rigtig hjemmeside, for at øge din tillid til dem. Dobbelttjek derfor altid, om du er på den rigtige hjemmeside. DAO opkræver aldrig penge via links";
             btnText=["Start forfra"];
         break;
         case "Udfyld, indsend, og underskriv med mitID":
@@ -73,17 +72,17 @@ const nextStage=(e)=>{
         break;
         case "Luk siden ned":
             h2Text="Da du ikke har udfyldt, kan svindlere ikke få fat i mere end din IP-adresse";
-            pText="Det er ikke muligt at sende penge via DAO. Svindlere kan oprette falske hjemmesider, som er næsten identiske med en rigtig hjemmeside, for at øge troværdigheden. Disse hjemmesider kan være svære at skelne fra de rigtige. Dobbelttjek derfor altid, om det er den rigtige hjemmeside, du befinder dig på. Hvis du ikke kan finde frem til landingssiden fra den rigtige forside, så stol ikke på siden. DAO opkræver aldrig penge via links.";
+            pText="Det er ikke muligt at sende penge via DAO. Svindlere kan oprette falske hjemmesider, som er næsten identiske med en rigtig hjemmeside, for at øge din tillid til dem. Dobbelttjek derfor altid, om du er på den rigtige hjemmeside. DAO opkræver aldrig penge via links.";
             btnText=["Start forfra"];
         break;
         case "Kontakt banken hurtigst muligt":
             h2Text="Svindleren har nu adgang til både din konto og mitID. Begge dele bør spærres";
-            pText="Det er ikke muligt at sende penge via DAO. Svindlere kan oprette falske hjemmesider, som er næsten identiske med en rigtig hjemmeside, for at øge troværdigheden. Disse hjemmesider kan være svære at skelne fra de rigtige. Dobbelttjek derfor altid, om det er den rigtige hjemmeside, du befinder dig på. Hvis du ikke kan finde frem til landingssiden fra den rigtige forside, så stol ikke på siden. DAO opkræver aldrig penge via links.";
+            pText="Det er ikke muligt at sende penge via DAO. Svindlere kan oprette falske hjemmesider, som er næsten identiske med en rigtig hjemmeside, for at øge din tillid til dem. Dobbelttjek derfor altid, om du er på den rigtige hjemmeside. DAO opkræver aldrig penge via links.";
             btnText=["Start forfra"];
         break;
         case "Læg det væk og prøv igen senere":
-            h2Text="Din bank kontakter dig dagen efter, da der ender med at blive trukket om 5.000 euro. Både din konto og mitID bør lukkes, da svindleren har adgang hertil. En indboforsikring dækker identitetstyveri, og dækker derfor det tabte beløb. Men har du ingen indboforsikring, er pengene tabt.";
-            pText="Det er ikke muligt at sende penge via DAO. Svindlere kan oprette falske hjemmesider, som er næsten identiske med en rigtig hjemmeside, for at øge troværdigheden. Disse hjemmesider kan være svære at skelne fra de rigtige. Dobbelttjek derfor altid, om det er den rigtige hjemmeside, du befinder dig på. Hvis du ikke kan finde frem til landingssiden fra den rigtige forside, så stol ikke på siden. DAO opkræver aldrig penge via links.";
+            h2Text="Din bank kontakter dig dagen efter, da der ender med at blive trukket 250 euro. Både din konto og mitID bør lukkes, da svindleren har adgang hertil.";
+            pText="En indboforsikring dækker identitetstyveri, og dækker derfor det tabte beløb. Men har du ingen indboforsikring, er pengene tabt. Det er ikke muligt at sende penge via DAO. Svindlere kan oprette falske hjemmesider, som er næsten identiske med en rigtig hjemmeside, for at øge din tillid til dem. Dobbelttjek derfor altid, om du er på den rigtige hjemmeside. DAO opkræver aldrig penge via links.";
             btnText=["Start forfra"];
         break;
         case "Start forfra":
