@@ -11,20 +11,18 @@ body{
 
 p{
     font-size: 16px;
-    text-align: center;
 }
 
 h1{
     border-bottom: 1px solid black;
-    width: 65%;
-    justify-self: center;
 }
 
-h1, h2{
+h1, h2, p{
     font-weight: 500;
     text-align: center;
 }
 
+/*----------------bobler----------------*/
 .bubble{
     border-radius: 50%;
     background-color: partials.$bubble;
@@ -90,7 +88,7 @@ h1, h2{
 }
 .no12{
     animation-delay: 3s;
-    bottom: -25vh;
+    bottom: -15vh;
     @include partials.bubble1;
 }
 .no13{
@@ -105,7 +103,7 @@ h1, h2{
 }
 .no15{
     animation-delay: 1.3s;
-    bottom: -20vh;
+    bottom: -13vh;
     @include partials.bubble1;
 }
 
@@ -118,48 +116,80 @@ h1, h2{
     }
 }
 
+/*----------------indhold----------------*/
 .intro{
-    width: 85%;
-    margin: 4em auto;
+    width: 55%;
+    margin: 3em auto 1.8em auto;
 }
 
 .stage{
-    padding: 2.5em 2em;
-    border: 1px solid partials.$bubble;
+    padding: 1.5em;
+    border: 1px solid purple;
+    background-color: partials.$bubble;
+    width: 95%;
+    display: none;
+    margin: 0 auto;
+
         &.active{
             display: block;
         }
+
         h2{
             margin-bottom: 0.5em;
         }
+
         .stage-img{
             width: 75vw;
             height: auto;
             margin: 2em auto;
             display: block;
         }
+
         div{
             display: flex;
             justify-content: center;
+            gap: 0.5em;
+            margin: 0.5em 0;
+
                 .btn{
-                    width: 20em;
-                    padding: 0.5em 3.5em;
-                    margin: 0.5em;
+                    width: 10em;
+                    padding: 0.5em 2em;
                     font-family: "Roboto Mono", monospace;
-                    font-style: normal;  
+                    border-radius: 8px;
+                    border: 0.5px solid purple;
+                    background-color: #beadee;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
         }
 }
 
+/*----------------desktop----------------*/
 @media screen and (min-width: 769px){
     p{
         font-size: 18px;
     }
-    h1{
+
+    .intro{
         width: 30%;
     }
-    .stage .stage-img{
-        height: 80vh;
-        width: auto;
+
+    .stage{
+        width: 65%;
+
+        .stage-img{
+            height: 60vh;
+            width: auto;
+        }
+        div{
+            gap: 1.2em;
+
+            .btn{
+                width: 18em;
+                font-size: 15px;
+            }
+        }
     }
 }

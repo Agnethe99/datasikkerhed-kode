@@ -9,23 +9,21 @@ body {
 
 p {
   font-size: 16px;
-  text-align: center;
 }
 
 h1 {
   border-bottom: 1px solid black;
-  width: 65%;
-  justify-self: center;
 }
 
-h1, h2 {
+h1, h2, p {
   font-weight: 500;
   text-align: center;
 }
 
+/*----------------bobler----------------*/
 .bubble {
   border-radius: 50%;
-  background-color: #c9b9fa;
+  background-color: #d1c3f9;
   position: absolute;
   left: -15vw;
   z-index: -1;
@@ -110,7 +108,7 @@ h1, h2 {
 
 .no12 {
   animation-delay: 3s;
-  bottom: -25vh;
+  bottom: -15vh;
   width: 4em;
   height: 4em;
 }
@@ -131,7 +129,7 @@ h1, h2 {
 
 .no15 {
   animation-delay: 1.3s;
-  bottom: -20vh;
+  bottom: -13vh;
   width: 4em;
   height: 4em;
 }
@@ -144,14 +142,19 @@ h1, h2 {
     transform: translateX(110vw);
   }
 }
+/*----------------indhold----------------*/
 .intro {
-  width: 85%;
-  margin: 4em auto;
+  width: 55%;
+  margin: 3em auto 1.8em auto;
 }
 
 .stage {
-  padding: 2.5em 2em;
-  border: 1px solid #c9b9fa;
+  padding: 1.5em;
+  border: 1px solid purple;
+  background-color: #d1c3f9;
+  width: 95%;
+  display: none;
+  margin: 0 auto;
 }
 .stage.active {
   display: block;
@@ -168,24 +171,41 @@ h1, h2 {
 .stage div {
   display: flex;
   justify-content: center;
+  gap: 0.5em;
+  margin: 0.5em 0;
 }
 .stage div .btn {
-  width: 20em;
-  padding: 0.5em 3.5em;
-  margin: 0.5em;
+  width: 10em;
+  padding: 0.5em 2em;
   font-family: "Roboto Mono", monospace;
-  font-style: normal;
+  border-radius: 8px;
+  border: 0.5px solid purple;
+  background-color: #beadee;
+}
+.stage div .btn:hover {
+  cursor: pointer;
 }
 
+/*----------------desktop----------------*/
 @media screen and (min-width: 769px) {
   p {
     font-size: 18px;
   }
-  h1 {
+  .intro {
     width: 30%;
   }
+  .stage {
+    width: 65%;
+  }
   .stage .stage-img {
-    height: 80vh;
+    height: 60vh;
     width: auto;
+  }
+  .stage div {
+    gap: 1.2em;
+  }
+  .stage div .btn {
+    width: 18em;
+    font-size: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
