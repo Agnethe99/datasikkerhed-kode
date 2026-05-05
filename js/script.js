@@ -65,6 +65,7 @@ const nextStage = (e)=>{
         case "Opfølgning med Torben Lund":
             h2Text = "Torben Lund svarer langsomt og i korte beskeder på dine spørgsmål. Han stopper til sidst helt med at svare, og du kan ikke få fat på ham igen.";
             pText = "Det er ikke muligt at sende penge via DAO. Svindlere kan oprette falske hjemmesider, som er næsten identiske med en rigtig hjemmeside, for at øge din tillid til dem. Dobbelttjek derfor altid, om du er på den rigtige hjemmeside. DAO opkræver aldrig penge via links";
+            imagePath = "billeder/dao-gennemgang.png";
             btnText = ["Start forfra"];
         break;
         case "Udfyld, indsend, og underskriv med mitID":
@@ -75,16 +76,19 @@ const nextStage = (e)=>{
         case "Luk siden ned":
             h2Text = "Da du ikke udfyldte, kan svindlere ikke få fat i mere end din IP-adresse";
             pText = "Det er ikke muligt at sende penge via DAO. Svindlere kan oprette falske hjemmesider, som er næsten identiske med en rigtig hjemmeside, for at øge din tillid til dem. Dobbelttjek derfor altid, om du er på den rigtige hjemmeside. DAO opkræver aldrig penge via links.";
+            imagePath = "billeder/dao-betaling-gennemgang.png";
             btnText = ["Start forfra"];
         break;
         case "Kontakt banken hurtigst muligt":
             h2Text = "Svindleren har nu adgang til både din konto og mitID. Begge dele bør spærres";
             pText = "Det er ikke muligt at sende penge via DAO. Svindlere kan oprette falske hjemmesider, som er næsten identiske med en rigtig hjemmeside, for at øge din tillid til dem. Dobbelttjek derfor altid, om du er på den rigtige hjemmeside. DAO opkræver aldrig penge via links.";
+            imagePath = "billeder/dao-betaling-gennemgang.png";
             btnText = ["Start forfra"];
         break;
         case "Læg det væk og prøv igen senere":
             h2Text = "Din bank kontakter dig dagen efter, da der ender med at blive trukket 250 euro. Både din konto og mitID bør lukkes, da svindleren har adgang hertil.";
             pText = "En indboforsikring dækker identitetstyveri, og dækker derfor det tabte beløb. Men har du ingen indboforsikring, er pengene tabt. Det er ikke muligt at sende penge via DAO. Svindlere kan oprette falske hjemmesider, som er næsten identiske med en rigtig hjemmeside, for at øge din tillid til dem. Dobbelttjek derfor altid, om du er på den rigtige hjemmeside. DAO opkræver aldrig penge via links.";
+            imagePath = "billeder/dao-betaling-gennemgang.png";
             btnText = ["Start forfra"];
         break;
         case "Start forfra":
