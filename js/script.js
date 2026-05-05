@@ -43,7 +43,7 @@ const nextStage = (e)=>{
     switch(e.target.textContent){
         case "Start":
             h2Text = "Du har sat et tæppe til salg på Facebook Marketplace. Torben Lund skriver til dig, da han er interesseret.";
-            imagePath = "billeder/Skærmbillede 2026-04-29 kl. 09.19.29.png";
+            imagePath = "billeder/torben-lund.png";
             btnText = ["Tryk på linket", "Slet beskederne", "Søg på google, om det er sandt"];
         break;
         case "Slet beskederne":
