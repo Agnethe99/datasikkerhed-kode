@@ -1,3 +1,4 @@
+/*------------generel styling------------*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,14 +15,16 @@ p {
 
 h1 {
   border-bottom: 1px solid black;
+  font-weight: bold;
+  text-align: center;
 }
 
-h1, h2, p {
+h2, p {
   font-weight: 500;
   text-align: center;
 }
 
-/*----------------bobler----------------*/
+/*----------------bubbles----------------*/
 .bubble {
   border-radius: 50%;
   background-color: #d1c3f9;
@@ -33,108 +36,110 @@ h1, h2, p {
 
 .no1 {
   animation-delay: 2s;
-  top: 10vh;
   width: 2em;
   height: 2em;
+  top: 10vh;
 }
 
 .no2 {
   animation-delay: 5s;
-  top: 20vh;
   width: 2em;
   height: 2em;
+  top: 20vh;
 }
 
 .no3 {
   animation-delay: 4s;
-  top: 30vh;
   width: 4em;
   height: 4em;
+  top: 30vh;
 }
 
 .no4 {
   animation-delay: 1s;
-  top: 40vh;
   width: 4em;
   height: 4em;
+  top: 40vh;
 }
 
 .no5 {
-  top: 50vh;
+  animation-delay: 0s;
   width: 4em;
   height: 4em;
+  top: 50vh;
 }
 
 .no6 {
   animation-delay: 3s;
-  top: 60vh;
   width: 2em;
   height: 2em;
+  top: 60vh;
 }
 
 .no7 {
   animation-delay: 6s;
-  top: 70vh;
   width: 4em;
   height: 4em;
+  top: 70vh;
 }
 
 .no8 {
   animation-delay: 7s;
-  top: 80vh;
   width: 2em;
   height: 2em;
+  top: 80vh;
 }
 
 .no9 {
   animation-delay: 4.5s;
-  top: 80vh;
   width: 4em;
   height: 4em;
+  top: 90vh;
 }
 
 .no10 {
   animation-delay: 7.25s;
-  top: 10vh;
   width: 4em;
   height: 4em;
+  top: 10vh;
 }
 
 .no11 {
   animation-delay: 2.15s;
-  top: 85vh;
   width: 4em;
   height: 4em;
+  top: 85vh;
 }
 
 .no12 {
   animation-delay: 3s;
-  bottom: -15vh;
   width: 4em;
   height: 4em;
+  top: 115vh;
 }
 
 .no13 {
   animation-delay: 5.8s;
-  bottom: -10vh;
   width: 2em;
   height: 2em;
+  top: 110vh;
 }
 
 .no14 {
   animation-delay: 7.5s;
-  bottom: -12vh;
   width: 2em;
   height: 2em;
+  top: 112vh;
 }
 
 .no15 {
   animation-delay: 1.3s;
-  bottom: -13vh;
   width: 4em;
   height: 4em;
+  top: 113vh;
 }
 
+/*------bubble animation------*/
 @keyframes move {
   0% {
     transform: translateX(-10vw);
@@ -143,15 +148,18 @@ h1, h2, p {
     transform: translateX(110vw);
   }
 }
-/*----------------indhold----------------*/
+/*--------------------hovedindhold--------------------*/
+/*overskrift*/
 .intro {
   width: 55%;
   margin: 3em auto 1.8em auto;
 }
 
+/*opbygning af stages*/
 .stage {
   padding: 1.5em;
   border: 1px solid purple;
+  border-radius: 8px;
   background-color: #d1c3f9;
   width: 95%;
   display: none;
@@ -182,9 +190,11 @@ h1, h2, p {
   border-radius: 8px;
   border: 0.5px solid purple;
   background-color: #beadee;
+  color: black;
 }
 .stage div .btn:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 
 /*----------------desktop----------------*/
@@ -196,17 +206,18 @@ h1, h2, p {
     width: 30%;
   }
   .stage {
-    width: 65%;
+    width: 72%;
   }
   .stage .stage-img {
-    height: 60vh;
-    width: auto;
+    max-width: 80%;
   }
   .stage div {
     gap: 1.2em;
   }
   .stage div .btn {
-    width: 18em;
+    padding: 1em;
+    border-radius: 15px;
+    width: 15em;
     font-size: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
