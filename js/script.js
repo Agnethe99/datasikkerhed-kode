@@ -1,5 +1,4 @@
 const btns = document.querySelectorAll(".stage .btn");
-const stages = document.querySelectorAll(".stage");
 const main = document.querySelector("main");
 
 //opbygning af sektion
@@ -48,7 +47,8 @@ const nextStage = (e)=>{
         break;
         case "Slet beskederne":
             h2Text = "Det er ikke muligt at sende penge via DAO.";
-            pText = "Svindlere kan oprette falske hjemmesider, som er næsten identiske med en rigtig hjemmeside, for at øge din tillid til dem. Dobbelttjek derfor altid, om du er på den rigtige hjemmeside. DAO opkræver aldrig penge via links.";
+            pText = "En måde svindlere prøver at lokke i fælden, er ved at sende falske links ud til falske hjemmesider. De falske hjemmesider er næsten identiske med en rigtig hjemmeside, for at øge din tillid til dem. Dobbelttjek derfor altid, om du er på den rigtige hjemmeside. DAO opkræver aldrig penge via links.";
+            imagePath = "billeder/torben-lund-gennemgang.png";
             btnText = ["Start forfra"];
         break;
         case "Søg på google, om det er sandt":
