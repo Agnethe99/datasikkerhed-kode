@@ -102,7 +102,7 @@ h2, p{
 /*opbygning af stages*/
 .stage{
     padding: 1.5em;
-    border: 1px solid purple;
+    border: 1px solid partials.$border;
     border-radius: 8px;
     background-color: partials.$bubble;
     width: 95%;
@@ -134,7 +134,7 @@ h2, p{
                     padding: 0.5em 2em;
                     font-family: "Roboto Mono", monospace;
                     border-radius: 8px;
-                    border: 0.5px solid purple;
+                    border: 0.5px solid partials.$border;
                     background-color: #beadee;
                     color: black;
 
