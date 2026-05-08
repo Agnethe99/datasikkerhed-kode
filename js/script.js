@@ -64,7 +64,7 @@ const nextStage = (e)=>{
         break;
         case "Opfølgning med Torben Lund":
             h2Text = "Torben Lund svarer langsomt og i korte beskeder på dine spørgsmål. Han stopper til sidst helt med at svare, og du kan ikke få fat på ham igen.";
-            pText = "Det er ikke muligt at sende penge via DAO. Svindlere kan oprette falske hjemmesider, som er næsten identiske med en rigtig hjemmeside, for at øge din tillid til dem. Dobbelttjek derfor altid, om du er på den rigtige hjemmeside. DAO opkræver aldrig penge via links";
+            pText = "En måde svindlere prøver at lokke i fælden, er ved at sende falske links ud til falske hjemmesider. De falske hjemmesider er næsten identiske med en rigtig hjemmeside, for at øge din tillid til dem. Dobbelttjek derfor altid, om du er på den rigtige hjemmeside. DAO opkræver aldrig penge via links.";
             imagePath = "billeder/dao-gennemgang.png";
             btnText = ["Start forfra"];
         break;
